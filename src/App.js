@@ -1,16 +1,14 @@
 import React from "react";
 import "./styles.css";
 
-// The concat() method is used to merge two or more arrays.
-// This method does not change the existing arrays,
-// but instead returns a new array.
-
 // 1
-const array1 = ["a", "b", "c"];
-const array2 = ["d", "e", "f"];
-const array3 = array1.concat(array2);
 
-console.log({ array1, array2, array3 });
+const array1 = ["a", "b", "c", "dd", "e"];
+
+// copy to index 0 the element at index 3
+console.log(array1.copyWithin(0, 1, 4));
+
+// console.log(array1.copyWithin(1, 3));
 
 export default function App() {
   return (
