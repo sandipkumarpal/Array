@@ -33,3 +33,23 @@ console.log(array1.copyWithin(1, 3));
 // expected output: Array ["d", "d", "e", "d", "e"]
 
 ```
+
+## Array.prototype.entries()
+
+The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array.
+
+```bash
+
+array.entries()
+
+const array1 = ['a', 'b', 'c'];
+
+const iterator1 = array1.entries();
+
+console.log(iterator1.next().value);
+// expected output: Array [0, "a"]
+
+console.log(iterator1.next().value);
+// expected output: Array [1, "b"]
+
+```

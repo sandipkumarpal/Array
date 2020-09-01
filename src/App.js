@@ -2,13 +2,22 @@ import React from "react";
 import "./styles.css";
 
 // 1
+const array1 = ["a", "b", "c"];
 
-const array1 = ["a", "b", "c", "dd", "e"];
+const iterator1 = array1.entries();
 
-// copy to index 0 the element at index 3
-console.log(array1.copyWithin(0, 1, 4));
+console.log(iterator1.next());
 
-// console.log(array1.copyWithin(1, 3));
+const a = ["a", "b", "c"];
+
+for (const [index, element] of a.entries()) console.log(index, element);
+
+var a1 = ["a", "b", "c"];
+var iterator = a1.entries();
+
+for (let e of iterator) {
+  console.log(e);
+}
 
 export default function App() {
   return (
